@@ -102,11 +102,18 @@ a{
     scale: 1.1;
 }
 
-@media only  screen and (max-width:500px){
+@media only  screen and (max-width:600px){
     .Category-List > li{
         font-size: smaller;
     }
 }
+
+@media only  screen and (max-width:430px){
+    .Category-List > li{
+        font-size: 10px;
+    }
+}
+
 
 @media only screen and (max-width:550px){
     .Search-bar{
@@ -258,10 +265,3 @@ a{
 }
 }
 
-.Scale-down > img{
-    transition: all 1s ease-in-out;
-}
-
-.Scale-down > img:hover{
-    transform: scale(1.1);
-}
