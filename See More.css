@@ -26,3 +26,9 @@ img{
 img:hover{
     transform: scale(0.9);
 }
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: Arial;
+}

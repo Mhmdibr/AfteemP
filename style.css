@@ -257,3 +257,11 @@ a{
 
 }
 }
+
+.Scale-down > img{
+    transition: all 1s ease-in-out;
+}
+
+.Scale-down > img:hover{
+    transform: scale(1.1);
+}
