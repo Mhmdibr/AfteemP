@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+}
+
+
+
+.grid-template{
+    margin-top: 20px;
+    display: grid;
+    column-gap: 3px;
+    row-gap: 5px;
+    grid-template-columns: 100px minmax(260px, 300px) 1fr;
+    grid-template-rows: 250px 50px 20px 50px  ;
+}
+
+.side-imgs > img{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    transition: all .2s ease-in-out;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 100%}
+}
+
+.side-imgs > img:hover{
+    transform: scale(0.9);
+    
+}
+
+.side-imgs > img:after{
+    animation: fadeIn 2s;
+}
+
+.side-imgs{
+ grid-row: span 5;
+}
+
+.main-img{
+    grid-row: span 5;
+}
+
+.main-img > img{
+    width: 100%;
+    height: auto;
+}
+
+.Name > h1{
+    font-size: 27px;
+
+}
+
+.Price > h2 > span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn-email > a > button{
+    width: 300px ;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-wp > a > button{
+    width: 300px ;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+
+    transform: scale(1.1);
+}
+
+.add-to-cart > a:hover{
+    color: red;
+}
+
+h4{
+    margin-left: 140px;
+    top: 20px;
+}
+
+@media only screen and (max-width:1025px){
+    .details{
+        grid-row: span 4;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .main-img{
+        grid-column:span 2; 
+    }
+    .details{
+        grid-column: span 3;
+    }
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+header > nav > img{
+    width: 130px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8CABFF;
+
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0 10px;
+
+
+}
+
+nav > ul > li{
+    cursor: pointer;
+    font-size: 13px;
+    transition: all .2s ease-in-out;
+
+}
+
+nav > ul > li:hover{
+    transform: scale(0.9);
+    color: white;
+}
+
+nav > ul > li > a{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+li > a:hover{
+    color: white;
+}
+
+.Search-bar{
+    width: 200px;
+    height: 20px;
+}
+
+.search{
+    display: flex;
+}
+
+.search > svg{
+    width: 18px;
+    margin-left: 9px;
+    transition: all .1s ease-in-out;
+}
+
+.search > svg:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+@media only  screen and (max-width:500px){
+    .Category-List > li{
+        font-size: smaller;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .Search-bar{
+        display: none;
+    }
+
+    header > nav > img{
+        width: 80px;
+    }
+
+}
+
+.delivery{
+    margin-top: 10px;
+}
+
+.Contacts{
+    background-color: #8CABFF;
+    margin-top: 30px;
+    width: 100%;
+    height: 200px;
+    color: white;
+    padding-top: 20px;
+    height: 100%;
+}
+
+
+.Contacts>h1{
+    text-align: center;
+}
+
+.Nb > h4 {
+    font-size: 20px;
+}
+.Nb > h4 > span{
+ color: yellow;
+ font-weight: 300;
+}
+
+.logos > svg{
+    padding-right: 10px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 17px;
+}
+
+
+
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+
+}
