@@ -165,10 +165,13 @@ li > a:hover{
 }
 
 .Search-bar{
-    width: 200px;
-    height: 20px;
+    border-color: #4477CE;
+    border-radius: 4px;
+    outline: none;
+    width: 300px;
+    height: 23px;
+    padding-left: 3px;
 }
-
 .search{
     display: flex;
 }
@@ -278,4 +281,36 @@ h4{
 
 .contact-info{
     margin-left: 7px;
+}
+
+@media only  screen and (max-width:730px){
+    .search button{
+        display: none;
+    }
+    .Search-bar{
+        width: 200px;
+    }
+}
+
+
+.search button{
+    content:'Search';
+    background-color: rgb(6, 70, 230);
+    color: white;
+    align-self: center;
+    justify-self: center;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    border-top-left-radius: 6px ;
+    border-bottom-left-radius: 6px;
+    padding-top: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+
+.search button:hover{
+    transform: scale(0.9);
 }
